@@ -59,7 +59,6 @@ window.addEventListener("wheel", function (dets) {
 const scroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
-  smoothMobile: true,
 });
 document.querySelectorAll("nav a").forEach((link) => {
   link.addEventListener("click", function (event) {
