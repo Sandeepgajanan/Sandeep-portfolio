@@ -14,26 +14,26 @@ if (window.innerWidth > 480) {
     delay: 0.2,
     stagger: 0.2,
   });
+
+  tl.from(".page1 h1", {
+    y: 80,
+    duration: 0.6,
+    delay: 0.5,
+    opacity: 0,
+    stagger: 0.2,
+  });
+
+  tl.from(".download-cv a", {
+    opacity: 0,
+    y: 10,
+    duration: 0.5,
+    delay: 0.2,
+    stagger: 0.2,
+  });
 }
 
-tl.from(".page1 h1", {
-  y: 80,
-  duration: 0.6,
-  delay: 0.5,
-  opacity: 0,
-  stagger: 0.2,
-});
-
-tl.from(".download-cv a", {
-  opacity: 0,
-  y: 10,
-  duration: 0.5,
-  delay: 0.2,
-  stagger: 0.2,
-});
-
-function handleScroll(scrollDirection) {
-  if (scrollDirection === "down") {
+window.addEventListener("wheel", function (dets) {
+  if (dets.deltaY > 0) {
     gsap.to(".marque", {
       transform: "translateX(-200%)",
       duration: 6,
@@ -53,22 +53,6 @@ function handleScroll(scrollDirection) {
     gsap.to(".marque img", {
       rotate: 0,
     });
-  }
-}
-
-window.addEventListener("wheel", function (event) {
-  if (event.deltaY > 0) {
-    handleScroll("down");
-  } else {
-    handleScroll("up");
-  }
-});
-
-window.addEventListener("touchmove", function (event) {
-  if (event.touches[0].clientY > startY) {
-    handleScroll("down");
-  } else {
-    handleScroll("up");
   }
 });
 

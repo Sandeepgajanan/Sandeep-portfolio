@@ -185,6 +185,7 @@
   }
   .page1 {
     padding: 2em;
+    height: auto;
   }
   .page1 h1 {
     font-size: 8vw;
@@ -209,5 +210,8 @@
     max-width: calc(100% - 1em);
     margin: 2em 0;
     padding: 1em;
+  }
+  #move {
+    display: none;
   }
 }
