@@ -32,8 +32,8 @@ tl.from(".download-cv a", {
   stagger: 0.2,
 });
 
-window.addEventListener("wheel", function (dets) {
-  if (dets.deltaY > 0) {
+function handleScroll(scrollDirection) {
+  if (scrollDirection === "down") {
     gsap.to(".marque", {
       transform: "translateX(-200%)",
       duration: 6,
@@ -53,6 +53,22 @@ window.addEventListener("wheel", function (dets) {
     gsap.to(".marque img", {
       rotate: 0,
     });
+  }
+}
+
+window.addEventListener("wheel", function (event) {
+  if (event.deltaY > 0) {
+    handleScroll("down");
+  } else {
+    handleScroll("up");
+  }
+});
+
+window.addEventListener("touchmove", function (event) {
+  if (event.touches[0].clientY > startY) {
+    handleScroll("down");
+  } else {
+    handleScroll("up");
   }
 });
 
