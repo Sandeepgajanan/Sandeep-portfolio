@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sandeep's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media.css" />
     <link
@@ -16,346 +20,397 @@
   </head>
 
   <body>
-    <div class="bg">
-      <nav>
-        <a href="#about">
-          <h3>About Me</h3>
-        </a>
-        <a href="#education">
-          <h3>Education</h3>
-        </a>
-        <a href="#projects">
-          <h3>Projects</h3>
-        </a>
-        <a href="#contact">
-          <h3>Contact Me</h3>
-        </a>
-        <div class="menu-icon" onclick="toggleMenu()">
-          <i class="fas fa-bars"></i>
-        </div>
-      </nav>
-      <div class="page1">
-        <h1>I'm an <span>engineer</span></h1>
-        <h1>
-          with<span
-            ><svg class="c-bttn__morph" fill="none" viewBox="0 0 131 136">
-              <path
-                class="g-path"
-                data-morph="end"
-                fill="#fff"
-                d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z"
-              ></path>
-              <path
-                class="g-path"
-                data-morph="start"
-                fill="#fff"
-                d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z"
-                data-original="M65.72 109.14c10.08 0 17.76-3.78 23.04-11.34 5.4-7.68 8.1-17.64 8.1-29.88 0-12.24-2.7-22.2-8.1-29.88-5.28-7.68-12.96-11.52-23.04-11.52-9.96 0-17.7 3.84-23.22 11.52-5.4 7.68-8.1 17.64-8.1 29.88 0 12.12 2.7 22.02 8.1 29.7 5.52 7.68 13.26 11.52 23.22 11.52Zm46.08 7.02c-11.64 12.6-27.06 18.9-46.26 18.9s-34.62-6.3-46.26-18.9C7.76 103.56 2 87.48 2 67.92c0-19.56 5.76-35.64 17.28-48.24C30.92 7.08 46.34.78 65.54.78s34.62 6.3 46.26 18.9c11.64 12.6 17.46 28.68 17.46 48.24 0 19.56-5.82 35.64-17.46 48.24Z"
-              ></path></svg></span
-          >ut a
-        </h1>
-        <h1>degree in <span>engineering</span></h1>
-        <div class="download-cv">
-          <a href="resume.pdf" download>
-            <h5>Resume</h5>
+    <div id="main">
+      <div class="bg" data-scroll-section>
+        <nav>
+          <a href="#about">
+            <h3>About Me</h3>
           </a>
-          <a
-            href="https://www.linkedin.com/in/sandeep-gajanan-05610a256"
-            target="_blank"
-          >
-            <h5>Linked In</h5>
+          <a href="#education">
+            <h3>Education</h3>
           </a>
-          <a href="https://github.com/Sandeepgajanan" target="_blank" download>
-            <h5>Git Hub</h5>
+          <a href="#projects">
+            <h3>Projects</h3>
           </a>
-        </div>
-      </div>
-    </div>
-    <div class="about-me" id="about">
-      <div class="info">
-        <h2>Hi,I'm Sandeep Bhandari</h2>
-        <h3>I'm a passionate Software Developer</h3>
-      </div>
-      <div class="loc">
-        <h5><i class="fas fa-map-marker-alt"></i> Karnataka</h5>
-        <h5><i class="fas fa-phone"></i> 9482064048</h5>
-      </div>
-      <div class="cert">
-        <h2>Certificates:</h2>
-        <div class="sec">
-          <h4>MERN Stack</h4>
-          <a
-            href="https://drive.google.com/file/d/17tWF_yq0MjnahWtIZyR766nhF4BC92b6/view"
-            target="_blank"
-            ><i class="fas fa-link"></i> Link</a
-          >
-        </div>
-        <div class="sec">
-          <h4>Java Basic</h4>
-          <a
-            href="https://www.hackerrank.com/certificates/baa51c77099d"
-            target="_blank"
-            ><i class="fas fa-link"></i> Link</a
-          >
-        </div>
-        <div class="sec">
-          <h4>Python Basic</h4>
-          <a
-            href="https://www.hackerrank.com/certificates/1aec94d4d912"
-            target="_blank"
-            ><i class="fas fa-link"></i> Link</a
-          >
-        </div>
-        <div class="sec">
-          <h4>CSS Basic</h4>
-          <a
-            href="https://www.hackerrank.com/certificates/81b5ee58601f"
-            target="_blank"
-            ><i class="fas fa-link"></i> Link</a
-          >
-        </div>
-      </div>
-      <div class="skills-section">
-        <div class="card">
-          <h2>Skills</h2>
-          <ul>
-            <li><i class="fas fa-lightbulb"></i> Learning agility</li>
-            <li><i class="fas fa-tools"></i> Work ethic</li>
-            <li><i class="fas fa-exchange-alt"></i> Adaptability</li>
-            <li><i class="fas fa-brain"></i> Active listening</li>
-            <li><i class="fas fa-users"></i> Teamwork</li>
-            <li><i class="fas fa-brain"></i> Problem-solving</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h2>Tech Skills</h2>
-          <ul>
-            <li><i class="fab fa-java"></i> JAVA</li>
-            <li><i class="fab fa-html5"></i> HTML</li>
-            <li><i class="fab fa-css3-alt"></i> CSS</li>
-            <li><i class="fab fa-css3"></i> TAILWIND CSS</li>
-            <li><i class="fab fa-js"></i> JAVA SCRIPT</li>
-            <li><i class="fab fa-react"></i> REACT JS</li>
-            <li><i class="fab fa-node-js"></i> NODE JS</li>
-            <li><i class="fas fa-server"></i> EXPRESS JS</li>
-            <li><i class="fas fa-database"></i> SQL</li>
-            <li><i class="fab fa-git"></i> GIT</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h2>Internship</h2>
-          <div class="internship-details">
-            <p>
-              <i class="fas fa-building"></i> Devappsys It Solutions And Pvt Ltd
-            </p>
-            <p><i class="fas fa-map-marker-alt"></i> Mangalore</p>
-            <p><i class="fas fa-briefcase"></i> React Developer Intern</p>
-            <p><i class="far fa-calendar-alt"></i> April 2023 to July 2024</p>
-            <p>
-              <i class="fas fa-briefcase"></i> Developed Responsive webpages
-            </p>
+          <a href="#contact">
+            <h3>Contact Me</h3>
+          </a>
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="education" id="education">
-      <h2 class="heading-gradient">Education</h2>
-      <div class="education-cards">
-        <div class="education-card">
-          <img src="./img/images.png" alt="Education 1" />
-          <h3>PG-MCA</h3>
-          <p>Mangalore University</p>
-          <p>AIMIT<br />Mangalore</p>
-          <p>8.3 cgpa</p>
-          <p>Years: 2021-2023</p>
-        </div>
-        <div class="education-card">
-          <img src="./img/sdmcbm.png" alt="Education 2" />
-          <h3>UG-BCA.</h3>
-          <p>Mangalore University</p>
-          <p>SDMCBM<br />Mangalore</p>
-          <p>87%</p>
-          <p>Years: 2018-2021</p>
-        </div>
-        <div class="education-card">
-          <img src="./img/avb.png" alt="Education 3" />
-          <h3>PUC-PCMCs</h3>
-          <p>Dharwad University</p>
-          <p>Dr.A.V.B<br />Kumta</p>
-          <p>83%</p>
-          <p>Years: 2016-2018</p>
-        </div>
-        <div class="education-card">
-          <img src="./img/dh.png" alt="Education 4" />
-          <h3>SSLC</h3>
-          <p>Dharwad University</p>
-          <p>S.K.P Highschool <br />Katgal</p>
-          <p>90%</p>
-          <p>Years: 2014-2016</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="projects" id="projects">
-      <h2 class="heading-gradient">Projects</h2>
-      <div class="uppercards">
-        <div class="card">
-          <div class="card-content">
-            <div class="card-part1">
-              <h1>Omni Food</h1>
-              <img src="./img/omni.png" alt="omnifood" />
-            </div>
-            <div class="card-part2">
-              <div class="sm">
-                <h5>Technologies</h5>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>BOOTSTRAP</li>
-                <li>JQUERY</li>
-              </div>
-              <div class="sm">
-                <h5>Features</h5>
-                <ul>
-                  <li>Foods Available</li>
-                  <li>Ordering Methods</li>
-                  <li>Cities</li>
-                  <li>Testimonials</li>
-                  <li>Plans and Contact</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <button>
+        </nav>
+        <div class="page1" data-scroll data-scroll-speed="1">
+          <h1>I'm an <span>engineer</span></h1>
+          <h1>
+            with<span
+              ><svg class="c-bttn__morph" fill="none" viewBox="0 0 131 136">
+                <path
+                  class="g-path"
+                  data-morph="end"
+                  fill="#fff"
+                  d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z"
+                ></path>
+                <path
+                  class="g-path"
+                  data-morph="start"
+                  fill="#fff"
+                  d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z"
+                  data-original="M65.72 109.14c10.08 0 17.76-3.78 23.04-11.34 5.4-7.68 8.1-17.64 8.1-29.88 0-12.24-2.7-22.2-8.1-29.88-5.28-7.68-12.96-11.52-23.04-11.52-9.96 0-17.7 3.84-23.22 11.52-5.4 7.68-8.1 17.64-8.1 29.88 0 12.12 2.7 22.02 8.1 29.7 5.52 7.68 13.26 11.52 23.22 11.52Zm46.08 7.02c-11.64 12.6-27.06 18.9-46.26 18.9s-34.62-6.3-46.26-18.9C7.76 103.56 2 87.48 2 67.92c0-19.56 5.76-35.64 17.28-48.24C30.92 7.08 46.34.78 65.54.78s34.62 6.3 46.26 18.9c11.64 12.6 17.46 28.68 17.46 48.24 0 19.56-5.82 35.64-17.46 48.24Z"
+                ></path></svg></span
+            >ut a
+          </h1>
+          <h1>degree in <span>engineering</span></h1>
+          <div class="download-cv">
+            <a href="resume.pdf" download>
+              <h5>Resume</h5>
+            </a>
             <a
-              href="https://sandeepgajanan.github.io/Omni-food/"
+              href="https://www.linkedin.com/in/sandeep-gajanan-05610a256"
               target="_blank"
-              >Link</a
             >
-          </button>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <div class="card-part1">
-              <h1>Sugasan</h1>
-              <img src="./img/sugasn.png" alt="sugasan" />
-            </div>
-            <div class="card-part2">
-              <div class="sm">
-                <h5>Technologies</h5>
-                <li>HTML</li>
-                <li>BOOTSTRAP</li>
-                <li>JAVA SCRIPT</li>
-                <li>PHP</li>
-              </div>
-              <div class="sm">
-                <h5>Features</h5>
-                <ul>
-                  <li>Customer management</li>
-                  <li>Branch addition</li>
-                  <li>Product and pricing</li>
-                  <li>Bill generation</li>
-                </ul>
-              </div>
-            </div>
+              <h5>Linked In</h5>
+            </a>
+            <a
+              href="https://github.com/Sandeepgajanan"
+              target="_blank"
+              download
+            >
+              <h5>Git Hub</h5>
+            </a>
           </div>
-          <button>
-            <a href="https://github.com/Sandeepgajanan/sugasan" target="_blank"
-              >Link</a
-            >
-          </button>
         </div>
       </div>
-      <div class="lowercards">
-        <div class="card">
-          <div class="card-content">
-            <div class="card-part1">
-              <h1>Speeda Cab</h1>
-              <img src="./img/speedaa.png" alt="speedaa" />
-            </div>
-            <div class="card-part2">
-              <div class="sm">
-                <h5>Technologies</h5>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVA SCRIPT</li>
-                <li>PHP</li>
-              </div>
-              <div class="sm">
-                <h5>Features</h5>
-                <ul>
-                  <li>Driver Management</li>
-                  <li>Car management</li>
-                  <li>Cab booking</li>
-                  <li>Feedback</li>
-                </ul>
-              </div>
+
+      <div class="about-me" id="about" data-scroll-section>
+        <div
+          class="info"
+          data-scroll
+          data-scroll-direction="horizontal"
+          data-scroll-speed="3"
+        >
+          <h2>Hi,I'm Sandeep Bhandari</h2>
+          <h3>I'm a passionate Software Developer</h3>
+        </div>
+        <div class="loc">
+          <h5><i class="fas fa-map-marker-alt"></i> Karnataka</h5>
+          <h5><i class="fas fa-phone"></i> 9482064048</h5>
+        </div>
+        <div class="cert" data-scroll data-scroll-speed="1">
+          <h2>Certificates:</h2>
+          <div class="sec">
+            <h4>MERN Stack</h4>
+            <a
+              href="https://drive.google.com/file/d/17tWF_yq0MjnahWtIZyR766nhF4BC92b6/view"
+              target="_blank"
+              ><i class="fas fa-link"></i> Link</a
+            >
+          </div>
+          <div class="sec">
+            <h4>Java Basic</h4>
+            <a
+              href="https://www.hackerrank.com/certificates/baa51c77099d"
+              target="_blank"
+              ><i class="fas fa-link"></i> Link</a
+            >
+          </div>
+          <div class="sec">
+            <h4>Python Basic</h4>
+            <a
+              href="https://www.hackerrank.com/certificates/1aec94d4d912"
+              target="_blank"
+              ><i class="fas fa-link"></i> Link</a
+            >
+          </div>
+          <div class="sec">
+            <h4>CSS Basic</h4>
+            <a
+              href="https://www.hackerrank.com/certificates/81b5ee58601f"
+              target="_blank"
+              ><i class="fas fa-link"></i> Link</a
+            >
+          </div>
+        </div>
+        <div class="skills-section" data-scroll data-scroll-speed="1">
+          <div class="card">
+            <h2>Skills</h2>
+            <ul>
+              <li><i class="fas fa-lightbulb"></i> Learning agility</li>
+              <li><i class="fas fa-tools"></i> Work ethic</li>
+              <li><i class="fas fa-exchange-alt"></i> Adaptability</li>
+              <li><i class="fas fa-brain"></i> Active listening</li>
+              <li><i class="fas fa-users"></i> Teamwork</li>
+              <li><i class="fas fa-brain"></i> Problem-solving</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2>Tech Skills</h2>
+            <ul>
+              <li><i class="fab fa-java"></i> JAVA</li>
+              <li><i class="fab fa-html5"></i> HTML</li>
+              <li><i class="fab fa-css3-alt"></i> CSS</li>
+              <li><i class="fab fa-css3"></i> TAILWIND CSS</li>
+              <li><i class="fab fa-js"></i> JAVA SCRIPT</li>
+              <li><i class="fab fa-react"></i> REACT JS</li>
+              <li><i class="fab fa-node-js"></i> NODE JS</li>
+              <li><i class="fas fa-server"></i> EXPRESS JS</li>
+              <li><i class="fas fa-database"></i> SQL</li>
+              <li><i class="fab fa-git"></i> GIT</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h2>Internship</h2>
+            <div class="internship-details">
+              <p>
+                <i class="fas fa-building"></i> Devappsys It Solutions And Pvt
+                Ltd
+              </p>
+              <p><i class="fas fa-map-marker-alt"></i> Mangalore</p>
+              <p><i class="fas fa-briefcase"></i> React Developer Intern</p>
+              <p><i class="far fa-calendar-alt"></i> April 2023 to July 2024</p>
+              <p>
+                <i class="fas fa-briefcase"></i> Developed Responsive webpages
+              </p>
             </div>
           </div>
-          <button>
-            <a
-              href="https://github.com/Sandeepgajanan/Speeda-Cab"
-              target="_blank"
-              >Link</a
-            >
-          </button>
         </div>
+      </div>
 
-        <div class="card">
-          <div class="card-content">
-            <div class="card-part1">
-              <h1>Covid-Shield</h1>
-              <img src="./img/covid.png" alt="Covid-Shield" />
+      <div class="education" id="education" data-scroll-section>
+        <h2 class="heading-gradient">Education</h2>
+        <div class="education-cards" data-scroll data-scroll-speed="2">
+          <div class="education-card">
+            <img src="./img/images.png" alt="Education 1" />
+            <h3>PG-MCA</h3>
+            <p>Mangalore University</p>
+            <p>AIMIT<br />Mangalore</p>
+            <p>8.3 cgpa</p>
+            <p>Years: 2021-2023</p>
+          </div>
+          <div class="education-card">
+            <img src="./img/sdmcbm.png" alt="Education 2" />
+            <h3>UG-BCA.</h3>
+            <p>Mangalore University</p>
+            <p>SDMCBM<br />Mangalore</p>
+            <p>87%</p>
+            <p>Years: 2018-2021</p>
+          </div>
+          <div class="education-card">
+            <img src="./img/avb.png" alt="Education 3" />
+            <h3>PUC-PCMCs</h3>
+            <p>Dharwad University</p>
+            <p>Dr.A.V.B<br />Kumta</p>
+            <p>83%</p>
+            <p>Years: 2016-2018</p>
+          </div>
+          <div class="education-card">
+            <img src="./img/dh.png" alt="Education 4" />
+            <h3>SSLC</h3>
+            <p>Dharwad University</p>
+            <p>S.K.P Highschool <br />Katgal</p>
+            <p>90%</p>
+            <p>Years: 2014-2016</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects" id="projects" data-scroll-section>
+        <h2 class="heading-gradient">Projects</h2>
+        <div class="uppercards" data-scroll data-scroll-speed="2">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-part1">
+                <h1>Omni Food</h1>
+                <img src="./img/omni.png" alt="omnifood" />
+              </div>
+              <div class="card-part2">
+                <div class="sm">
+                  <h5>Technologies</h5>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>BOOTSTRAP</li>
+                  <li>JQUERY</li>
+                </div>
+                <div class="sm">
+                  <h5>Features</h5>
+                  <ul>
+                    <li>Foods Available</li>
+                    <li>Ordering Methods</li>
+                    <li>Cities</li>
+                    <li>Testimonials</li>
+                    <li>Plans and Contact</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="card-part2">
-              <div class="sm">
-                <h5>Technologies</h5>
-                <ul>
+            <button>
+              <a
+                href="https://sandeepgajanan.github.io/Omni-food/"
+                target="_blank"
+                >Link</a
+              >
+            </button>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="card-part1">
+                <h1>Sugasan</h1>
+                <img src="./img/sugasn.png" alt="sugasan" />
+              </div>
+              <div class="card-part2">
+                <div class="sm">
+                  <h5>Technologies</h5>
+                  <li>HTML</li>
+                  <li>BOOTSTRAP</li>
+                  <li>JAVA SCRIPT</li>
+                  <li>PHP</li>
+                </div>
+                <div class="sm">
+                  <h5>Features</h5>
+                  <ul>
+                    <li>Customer management</li>
+                    <li>Branch addition</li>
+                    <li>Product and pricing</li>
+                    <li>Bill generation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button>
+              <a
+                href="https://github.com/Sandeepgajanan/sugasan"
+                target="_blank"
+                >Link</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="lowercards" data-scroll data-scroll-speed="2">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-part1">
+                <h1>Speeda Cab</h1>
+                <img src="./img/speedaa.png" alt="speedaa" />
+              </div>
+              <div class="card-part2">
+                <div class="sm">
+                  <h5>Technologies</h5>
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JAVA SCRIPT</li>
                   <li>PHP</li>
-                </ul>
-              </div>
-              <div class="sm">
-                <h5>Features</h5>
-                <ul>
-                  <li>Hospital Managment</li>
-                  <li>Vaccination booking</li>
-                  <li>Test booking</li>
-                  <li>Bed booking</li>
-                </ul>
+                </div>
+                <div class="sm">
+                  <h5>Features</h5>
+                  <ul>
+                    <li>Driver Management</li>
+                    <li>Car management</li>
+                    <li>Cab booking</li>
+                    <li>Feedback</li>
+                  </ul>
+                </div>
               </div>
             </div>
+            <button>
+              <a
+                href="https://github.com/Sandeepgajanan/Speeda-Cab"
+                target="_blank"
+                >Link</a
+              >
+            </button>
           </div>
-          <button>
-            <a
-              href="https://github.com/Sandeepgajanan/Covid-Shield"
-              target="_blank"
-              >Link</a
-            >
-          </button>
+
+          <div class="card">
+            <div class="card-content">
+              <div class="card-part1">
+                <h1>Covid-Shield</h1>
+                <img src="./img/covid.png" alt="Covid-Shield" />
+              </div>
+              <div class="card-part2">
+                <div class="sm">
+                  <h5>Technologies</h5>
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVA SCRIPT</li>
+                    <li>PHP</li>
+                  </ul>
+                </div>
+                <div class="sm">
+                  <h5>Features</h5>
+                  <ul>
+                    <li>Hospital Managment</li>
+                    <li>Vaccination booking</li>
+                    <li>Test booking</li>
+                    <li>Bed booking</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <button>
+              <a
+                href="https://github.com/Sandeepgajanan/Covid-Shield"
+                target="_blank"
+                >Link</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="move" data-scroll-section>
+        <div class="marque">
+          <h1>THANK YOU</h1>
+          <img
+            src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg"
+            alt=""
+          />
+        </div>
+        <div class="marque">
+          <h1>THANK YOU</h1>
+          <img
+            src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg"
+            alt=""
+          />
+        </div>
+        <div class="marque">
+          <h1>THANK YOU</h1>
+          <img
+            src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg"
+            alt=""
+          />
+        </div>
+        <div class="marque">
+          <h1>THANK YOU</h1>
+          <img
+            src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg"
+            alt=""
+          />
+        </div>
+        <div class="marque">
+          <h1>THANK YOU</h1>
+          <img
+            src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="contact" id="contact" data-scroll-section>
+        <h2 class="heading-gradient">Thank you:</h2>
+        <div class="contact-1">
+          <a href="mailto:beingsandeepg@gmail.com">
+            <h5>Mail here</h5>
+          </a>
         </div>
       </div>
     </div>
 
-    <div class="contact" id="contact">
-      <h2 class="heading-gradient">Thank you:</h2>
-      <div class="contact-1">
-        <a href="mailto:beingsandeepg@gmail.com">
-          <h5>Mail here</h5>
-        </a>
-      </div>
-    </div>
-
-    <script>
-      function toggleMenu() {
-        var navbar = document.querySelectorAll("nav a");
-        navbar.forEach(function (link) {
-          link.style.display =
-            link.style.display === "block" ? "none" : "block";
-        });
-      }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>

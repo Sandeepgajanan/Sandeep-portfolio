@@ -420,6 +420,28 @@ nav a:hover h3 {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
+#move {
+  background-color: #d8ff04;
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  overflow: hidden;
+}
+.marque {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+  padding: 0 1.5vw;
+  transform: "translateX(-100%)";
+}
+.marque h1 {
+  font-size: 4vw;
+  color: #000;
+}
+.marque img {
+  height: 4vw;
+}
 
 .contact {
   margin: 2em;
